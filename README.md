@@ -11,14 +11,124 @@ Email: oomayoo2522@gmail.com
 ### Integer Keys 
 - Formula / pseudocode:
   ```text
-  [Your implementation here]
+ === Table Size m = 10 ===
+Key     Index
+-----------------
+21      1
+22      2
+23      3
+24      4
+25      5
+26      6
+27      7
+28      8
+29      9
+30      0
+51      1
+52      2
+53      3
+54      4
+55      5
+56      6
+57      7
+58      8
+59      9
+60      0
+
+=== Table Size m = 11 ===
+Key     Index
+-----------------
+21      10
+22      0
+23      1
+24      2
+25      3
+26      4
+27      5
+28      6
+29      7
+30      8
+51      7
+52      8
+53      9
+54      10
+55      0
+56      1
+57      2
+58      3
+59      4
+60      5
+
+=== Table Size m = 37 ===
+Key     Index
+-----------------
+21      21
+22      22
+23      23
+24      24
+25      25
+26      26
+27      27
+28      28
+29      29
+30      30
+51      14
+52      15
+53      16
+54      17
+55      18
+56      19
+57      20
+58      21
+59      22
+60      23
   ```
-- Rationale: [Explain your design choices and how they minimize collisions.]
+- Rationale: Because it code useing vecter, so that will collisions on the repeated elements.
 
 ### Non-integer Keys
 - Formula / pseudocode:
   ```text
-  [Your implementation here]
+ === String Hash (m = 10) ===
+Key     Index
+-----------------
+cat     1
+dog     2
+bat     0
+cow     1
+ant     9
+owl     3
+bee     0
+hen     6
+pig     4
+fox     4
+
+=== String Hash (m = 11) ===
+Key     Index
+-----------------
+cat     7
+dog     8
+bat     6
+cow     7
+ant     5
+owl     8
+bee     6
+hen     1
+pig     9
+fox     10
+
+=== String Hash (m = 37) ===
+Key     Index
+-----------------
+cat     14
+dog     15
+bat     13
+cow     14
+ant     12
+owl     26
+bee     13
+hen     19
+pig     27
+fox     17
   ```
 - Rationale: [Explain your approach and its effectiveness for non-integer keys.]
 
