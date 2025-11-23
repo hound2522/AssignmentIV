@@ -11,78 +11,15 @@ Email: oomayoo2522@gmail.com
 ### Integer Keys 
 - Formula / pseudocode:
   ```text
- === Table Size m = 10 ===
-Key     Index
------------------
-21      1
-22      2
-23      3
-24      4
-25      5
-26      6
-27      7
-28      8
-29      9
-30      0
-51      1
-52      2
-53      3
-54      4
-55      5
-56      6
-57      7
-58      8
-59      9
-60      0
-
-=== Table Size m = 11 ===
-Key     Index
------------------
-21      10
-22      0
-23      1
-24      2
-25      3
-26      4
-27      5
-28      6
-29      7
-30      8
-51      7
-52      8
-53      9
-54      10
-55      0
-56      1
-57      2
-58      3
-59      4
-60      5
-
-=== Table Size m = 37 ===
-Key     Index
------------------
-21      21
-22      22
-23      23
-24      24
-25      25
-26      26
-27      27
-28      28
-29      29
-30      30
-51      14
-52      15
-53      16
-54      17
-55      18
-56      19
-57      20
-58      21
-59      22
-60      23
-
+  Formula:index=key%size
+  pseudocode:
+  key={ 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60 };
+  size={ 10, 11, 37 };
+  for(int m:size){
+  for(int k:key){
+  cout<<k<<" "<<key%size<<"\n\n";
+  }
+  }
   ```
 - Rationale: Because it code useing vecter, so that will collisions on the repeated elements.
 
