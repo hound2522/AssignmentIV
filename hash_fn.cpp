@@ -1,6 +1,6 @@
 /*
    ========================================
-   hash_fn.cpp ¡X implement your hash functions
+   hash_fn.cpp Â¡X implement your hash functions
    ========================================
 
    Description:
@@ -9,6 +9,7 @@
    Development History:
     - 2025/11/11: Initial implementation
     - 2025/11/17: Refactored to use hash_fn.hpp
+    - 2025/11/23: Modify myHashString
 
    Developer: li yun <oomayoo2522@gmail.com>
  */
