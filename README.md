@@ -226,3 +226,5 @@ Email: oomayoo2522@gmail.com
 1. Designing hash functions requires balancing simplicity and effectiveness to minimize collisions.
 2. Table size significantly impacts the uniformity of the hash distribution, with prime sizes performing better.
 3. The design using a prime table size and a linear transformation formula produced the most uniform index sequence.
+4. If keys doesn't be divided by table sizes, use composite numbers will produce repetitive patterns.
+5. The hash function should be designed to unique keys. That's one keys need one hash function, it is one-to-one relationship. It can make index get minimize collisions and produce repetitive patterns to promoting efficiency.
